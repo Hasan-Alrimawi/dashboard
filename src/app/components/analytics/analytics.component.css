@@ -1,0 +1,13 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+td{
+    padding: 15px;
+    text-align: center;
+}
+h3{
+    padding-left: 15px;
+}

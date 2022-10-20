@@ -1,0 +1,21 @@
+<!-- <div class="flexBox" [style.background-color] = "styling.color" [style.font-weight]="styling.font">
+    <label>{{record.title}}</label>
+    <label>${{record.value}}</label>
+</div> -->
+<table>
+    <tr *ngFor="let record of records, let i = index">
+        <th *ngIf="i == 0">
+            {{record.title}} 
+        </th>
+        <th *ngIf="i == 0">
+            ${{record.value}} 
+        </th>
+
+        <td *ngIf="i != 0">
+           {{record.title}} 
+        </td>
+        <td *ngIf="i != 0">
+            ${{record.value}}
+        </td>
+    </tr>
+</table>

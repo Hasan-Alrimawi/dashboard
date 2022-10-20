@@ -1,0 +1,33 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 300px;
+  }
+
+
+td{
+    border-style: solid;
+    padding: 8px;
+    background-color:#F5F5F5 ;
+    text-align: center;
+}
+td:nth-child(odd){
+    border-width: 1px 0 1px 1px;
+}
+td:nth-child(even){
+    border-width: 1px 1px 1px 0;
+}
+
+th{
+    border-style: solid;
+    padding: 8px;
+    background-color:#DAE8FC ;
+    text-align: center;
+}
+
+th:nth-child(odd){
+    border-width: 1px 0 1px 1px;
+}
+th:nth-child(even){
+    border-width: 1px 1px 1px 0;
+}

@@ -1,0 +1,16 @@
+.dashPage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 60px;
+    background-color: #85b6ff;
+    padding: 30px;
+}
+
+.charts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

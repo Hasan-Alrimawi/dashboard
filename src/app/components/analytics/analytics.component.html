@@ -1,5 +1,5 @@
 <section class="wrapper">
-    <div>
+    <div class="dataHolder">
         <h3>{{temp.title}}</h3>
         <table>
             <tr *ngFor="let tem of temp.statitics">
@@ -11,8 +11,11 @@
     </div>
     <section>
         <h3>
-            <!-- chart title -->
+            Compared to Previous Year
         </h3>
-        <!-- chart generation code -->
+        <div class="analytics">
+            <p-chart type="bar" [data]="basicData"></p-chart>
+        </div>
+        
     </section>
 </section>

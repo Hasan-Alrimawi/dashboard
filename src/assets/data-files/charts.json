@@ -1,0 +1,90 @@
+[
+    {
+        "title": "# of New Customers",
+        "statistics": [
+            {
+                "value": "97",
+                "parameter": "New Customers"
+            },
+            {
+                "value": "110",
+                "parameter": "Target"
+            },
+            {
+                "value": "88%",
+                "parameter": "Target Achievement"
+            }
+        ],
+        "basicData": {
+            "labels": [
+                "January",
+                "February",
+                "March"
+            ],
+            "datasets": [
+                {
+                    "label": "Last Period",
+                    "backgroundColor": "#42A5F5",
+                    "data": [
+                        35,
+                        34,
+                        30
+                    ]
+                },
+                {
+                    "label": "Current Period",
+                    "backgroundColor": "#FFA726",
+                    "data": [
+                        28,
+                        48,
+                        40
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "title": "# of New Customers",
+        "statistics": [
+            {
+                "value": "97",
+                "parameter": "New Customers"
+            },
+            {
+                "value": "110",
+                "parameter": "Target"
+            },
+            {
+                "value": "88%",
+                "parameter": "Target Achievement"
+            }
+        ],
+        "basicData": {
+            "labels": [
+                "January",
+                "February",
+                "March"
+            ],
+            "datasets": [
+                {
+                    "label": "Last Period",
+                    "backgroundColor": "#42A5F5",
+                    "data": [
+                        35,
+                        34,
+                        30
+                    ]
+                },
+                {
+                    "label": "Current Period",
+                    "backgroundColor": "#FFA726",
+                    "data": [
+                        28,
+                        48,
+                        40
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -8,6 +8,8 @@ import { WorkingCapitalComponent } from './components/working-capital/working-ca
 import { AnalyticsComponent } from './components/analytics/analytics.component';
 import {ChartModule} from 'primeng/chart';
 import { MainDashComponent } from './views/main-dash/main-dash.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { MainDashComponent } from './views/main-dash/main-dash.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartModule
+    ChartModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

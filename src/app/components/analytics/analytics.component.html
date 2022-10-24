@@ -1,10 +1,10 @@
 <section class="wrapper">
     <div class="dataHolder">
-        <h3>{{temp.title}}</h3>
+        <h3>{{data.title}}</h3>
         <table>
-            <tr *ngFor="let tem of temp.statitics">
-                <td>{{tem.value}}</td>
-                <td>{{tem.tar}}</td>
+            <tr *ngFor="let temp of data.statistics">
+                <td>{{temp.value}}</td>
+                <td>{{temp.parameter}}</td>
             </tr>
 
         </table>
@@ -14,7 +14,7 @@
             Compared to Previous Year
         </h3>
         <div class="analytics">
-            <p-chart type="bar" [data]="basicData"></p-chart>
+            <p-chart type="bar" [data]="data.basicData"></p-chart>
         </div>
         
     </section>

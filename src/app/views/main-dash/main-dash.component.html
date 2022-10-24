@@ -1,7 +1,8 @@
 <section class="dashPage">
     <app-working-capital></app-working-capital>
     <div class="charts">
-        <app-analytics></app-analytics>
-        <app-analytics></app-analytics>
+        <div *ngFor="let chart of (dataWrapper$ | async)">
+            <app-analytics [data]="chart"></app-analytics>
+        </div>
     </div>
 </section>

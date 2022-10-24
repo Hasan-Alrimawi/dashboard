@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { record } from './components/record/record.component';
 
 @Component({
   selector: 'app-root',

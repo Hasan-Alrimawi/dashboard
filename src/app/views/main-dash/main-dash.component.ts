@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { description } from 'src/app/components/analytics/analytics.component';
@@ -11,12 +12,12 @@ import { DataTransmitterService } from 'src/app/services/data-transmitter.servic
 export class MainDashComponent implements OnInit{
 
   constructor(private service: DataTransmitterService){}
-  dataWrapper$!: Observable<description[]>;
+  dataWrapper!: description[];
   ngOnInit(): void {
-    this.dataWrapper$ = this.service.getChartsData();  
+    this.service.getChartsData().subscribe((passed) => {this.dataWrapper = passed});  
   }
-
-  // dataWrapper$: Observable<description[]> = this.service.getChartsData();
-  
+  drop(event: CdkDragDrop<description[]>) {
+    moveItemInArray(this.dataWrapper, event.previousIndex, event.currentIndex);
+  }
 
 }

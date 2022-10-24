@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { DragDropModule } from '@angular/cdk/drag-drop'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecordComponent } from './components/record/record.component';
@@ -22,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ChartModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

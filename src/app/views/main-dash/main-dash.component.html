@@ -1,8 +1,8 @@
 <section class="dashPage">
     <app-working-capital></app-working-capital>
-    <div class="charts">
-        <div *ngFor="let chart of (dataWrapper$ | async)">
-            <app-analytics [data]="chart"></app-analytics>
+    <div class="charts" cdkDropList (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let chart of dataWrapper">
+            <app-analytics [data]="chart" cdkDrag></app-analytics>
         </div>
     </div>
 </section>

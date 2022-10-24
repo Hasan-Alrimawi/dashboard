@@ -44,18 +44,18 @@
         }
     },
     {
-        "title": "# of New Customers",
+        "title": "# of old Customers",
         "statistics": [
             {
-                "value": "97",
+                "value": "50",
                 "parameter": "New Customers"
             },
             {
-                "value": "110",
+                "value": "12",
                 "parameter": "Target"
             },
             {
-                "value": "88%",
+                "value": "30%",
                 "parameter": "Target Achievement"
             }
         ],
@@ -70,18 +70,18 @@
                     "label": "Last Period",
                     "backgroundColor": "#42A5F5",
                     "data": [
-                        35,
-                        34,
-                        30
+                        53,
+                        12,
+                        5
                     ]
                 },
                 {
                     "label": "Current Period",
                     "backgroundColor": "#FFA726",
                     "data": [
-                        28,
-                        48,
-                        40
+                        60,
+                        20,
+                        45
                     ]
                 }
             ]

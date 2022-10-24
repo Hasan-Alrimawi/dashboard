@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DataTransmitterService } from 'src/app/services/data-transmitter.service';
@@ -10,9 +11,13 @@ import { record } from '../record/record.component';
 })
 export class WorkingCapitalComponent implements OnInit {
   constructor(private dataService: DataTransmitterService){}
-  data$!: Observable<capitalInfo[]>;
+  data!: capitalInfo[];
   ngOnInit(): void {
-    this.data$ = this.dataService.getWorkingCapitalData();  
+    this.dataService.getWorkingCapitalData().subscribe((passed) => {this.data = passed});  
+  }
+
+  drop(event: CdkDragDrop<record[]>) {
+    moveItemInArray(this.data, event.previousIndex, event.currentIndex);
   }
 }
 
